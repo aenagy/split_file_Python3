@@ -22,11 +22,11 @@ These examples asume the above PowerShell session. Python must obviously be adde
 
 Split a base64 text file using the default line count in the output file which will result in output files with a size of 1 MiB each.
 
-`python .\splitFile.py --inFile .\testfile.zip.b64`
+`python .\splitTextFile.py --inFile .\testfile.zip.b64`
 
 ### Split a text file and specify the number of lines in each output file.
 
-`python .\splitFile.py --inFile .\testfile.zip.b64 --lines 3`
+`python .\splitTextFile.py --inFile .\testfile.zip.b64 --lines 3`
 
 ### Test and verify
 
@@ -34,13 +34,13 @@ I have included a file `testfile.txt` in this repo.
 
 This will split the test file will the default value for number of lines per output file.
 
-`python .\splitFile.py --inFile .\testfile.txt`
+`python .\splitTextFile.py --inFile .\testfile.txt`
 
 The output file is `testfile.txt_13443.txt` as the entire input file is less than 1 MiB in size.
 
 This example will use a more reasonable value for number of lines per output file.
 
-`python .\splitFile.py --inFile .\testfile.txt --lines 3`
+`python .\splitTextFile.py --inFile .\testfile.txt --lines 3`
 
 The output files are:
 
